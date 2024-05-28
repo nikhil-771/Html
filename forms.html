@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in html</title>
+</head>
+<body>
+    <form action="/samp.py" >    <!-- This is backend that will process data-->
+        
+        <input type="text" placeholder="Type soemthing here">
+        <br>
+        <input type="text" placeholder="Enter user name">
+        <br>
+        <input type="password" placeholder="Enter password"> <!-- type password will hide the input text-->
+        <br>
+                        
+        
+        <!--Without label-->
+        <!--Radio: only one option can be selected from same name-->
+    <!--<input type="KIND_OF_INFO" value="Send_To_backend" name="">Displayed_Csssss ontent-->
+        <input type="radio" value="class XI" name="class">Class XI
+        <input type="radio" value="class XII" name="class">Class XII
+
+        <br>
+        
+        <input type="radio" value="below 18" name="age">Under 18
+        <input type="radio" value="18 or above" name="age">18 or above
+        <br><br>
+
+        <!--With label -->
+        <label for="101">
+            <input type="radio" value="class XI" name="class" id ="101">Class XI
+        </label>
+        <label for="1">
+            <input type="radio" value="class XII" name="class" id="1">Class XII
+        </label>
+        <label for="kk">
+            <input type="radio" value="Graduate" name="class" id="kk">Schooling completed
+        </label>
+        <br>
+        
+        <!-- Meaningfull  labels-->
+        <label for="UNDER_AGE">
+            <input type="radio" value="class XI"  name="age" id ="UNDER_AGE">Under 18
+        </label>
+        <label for="NOT_UNDER_AGE">
+            <input type="radio" value="class XII" name="age" id="NOT_UNDER_AGE">18 or above
+        </label>
+        <br><br>
+
+    </form>
+</body>
+</html> 
